@@ -5,3 +5,9 @@ def test_home():
     client = app.test_client()
     response = client.get('/')
     assert response.status_code == 200
+
+def test_about():
+    ''' Test for about us page.'''
+    client = app.test_client()
+    response = client.get('/about-us')
+    assert response.status_code == 200
