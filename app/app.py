@@ -23,3 +23,8 @@ def contact():
 def sign_up():
     ''' Create account today.'''
     return '<p>Create an account with us.</p>'
+
+@app.route('/blog')
+def blog():
+    ''' Our blog.'''
+    return '<p>Become a faceless blogger, today!</p>'
