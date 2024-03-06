@@ -22,4 +22,4 @@ def contact():
 @app.route('/sign-up')
 def sign_up():
     ''' Create account today.'''
-    pass
+    return '<p>Create an account with us.</p>'
