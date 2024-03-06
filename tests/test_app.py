@@ -20,4 +20,6 @@ def test_contact():
 
 def test_signup():
     ''' Test for the signup page.'''
-    pass
+    client = app.test_client()
+    response = client.get('/sign-up')
+    assert response.status_code == 200
