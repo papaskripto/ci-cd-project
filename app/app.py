@@ -13,3 +13,13 @@ def home():
 def about():
     ''' Find more about us.'''
     return '<p>We are actually cooler than you think.</p>'
+
+@app.route('/contact-us')
+def contact():
+    ''' Contact us.'''
+    return '<p>Hahaha, you have finally seen light, brethren.'
+
+@app.route('/sign-up')
+def sign_up():
+    ''' Create account today.'''
+    pass
